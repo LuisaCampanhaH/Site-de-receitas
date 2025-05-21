@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Luisa Campanha">
+    <meta name="description" content="Site de receitas!">
+    <title>Éfood - Receitas Deliciosas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./assets/Styles/main.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <a href="./index.html"><i class="fa-solid fa-burger" id="nav_logo"> ÉFOOD</i></a>
+            <ul id="nav_list">
+                <li class="nav-item">
+                    <a href="./index.html">Home</a>
+                </li>
+                </ul>
+            <button id="mobile_btn" aria-label="Abrir menu mobile">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="./index.html">Home</a>
+                </li>
+                </ul>
+        </div>
+    </header>
+
+    <main id="content">
+        <section class="container mt-4">
+            <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" style="background-image: url(images/bolo-chocolate-vegano.jpg);">
+                        <a href="detalhes.html?id=3" class="carousel-link-overlay" aria-label="Ver receita do Bolo de Chocolate Vegano"></a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Bolo de Chocolate Vegano</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="background-image: url(images/cuscuz-marroquino.jpg);">
+                        <a href="detalhes.html?id=7" class="carousel-link-overlay" aria-label="Ver receita do Cuscuz Marroquino"></a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Cuscuz Marroquino</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="background-image: url(images/tacos-peixe.jpg);">
+                        <a href="detalhes.html?id=5" class="carousel-link-overlay" aria-label="Ver receita dos Tacos de Peixe"></a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Tacos de Peixe</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="background-image: url(images/salada-caesar-frango.jpg);">
+                        <a href="detalhes.html?id=2" class="carousel-link-overlay" aria-label="Ver receita da Salada Caesar com Frango"></a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Salada Caesar com Frango</h5>
+                        </div>
+                    </div>
+                    </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+        </section>
+        <section id="menu">            
+            <h3 class="section-subtitle">Sugestões de receitas</h3>
+            <div id="dishes">
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                        <img src="images/nhoque-batata-doce.jpg"  alt="Nhoque de Batata Doce">
+                        <h3 class="dish-title">Nhoque de Batata Doce</h3>
+                        <span class="dish-description" >Massa saudável e colorida, servida com molho de manteiga e sálvia.</span>
+                        <div class="dish-rate">
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <span>(500+)</span>
+                        </div>
+                        <a href="detalhes.html?id=6" class="stretched-link"></a>
+                </div>
+                <div class="dish">
+                        <div class="dish-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <img src="images/risoto-cogumelos.jpg"  alt="Risoto de Cogumelos">
+                        <h3 class="dish-title"> Risoto de Cogumelos </h3>
+                        <span class="dish-description">Cremoso e aromático, feito com arroz arbóreo, cogumelos frescos e um toque de vinho branco.</span>
+                        <div  class="dish-rate">
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <span>(500+)</span>
+                        </div>
+                        <a href="detalhes.html?id=1" class="stretched-link"></a>
+                </div>
+                <div class="dish">
+                        <div class="dish-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <img src="images/strogonoff-carne.jpg"  alt="Strogonoff de Carne">
+                        <h3 class="dish-title">Strogonoff de Carne</h3>
+                        <span class="dish-description">Tradicional e cremoso, com carne macia, molho de creme de leite e champignons.</span>
+                        <div  class="dish-rate">
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <span>(500+)</span>
+                        </div>
+                        <a href="detalhes.html?id=4" class="stretched-link"></a>
+                </div>
+                <div class="dish">
+                        <div class="dish-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <img src="images/pudim-leite-condensado.jpg"  alt="Pudim de Leite Condensado">
+                        <h3 class="dish-title">Pudim de Leite Condensado</h3>
+                        <span class="dish-description"> Doce e caramelizado, a sobremesa perfeita para qualquer ocasião.</span>
+                        <div class="dish-rate text-center mt-2">
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <span>(500+)</span>  
+                        </div>
+                        <a href="detalhes.html?id=8" class="stretched-link"></a>
+                    </div>
+                <div class="dish">
+                        <div class="dish-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <img src="images/lasanha.jpg"  alt="Lasanha de Berinjela">
+                        <h3 class="dish-title">Lasanha de Berinjela</h3>
+                        <span class="dish-description">Opção low-carb, com camadas de berinjela, queijo e molho de tomate caseiro.</span>
+                        <div  class="dish-rate">
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <span>(500+)</span>
+                        </div>
+                        <a href="detalhes.html?id=9" class="stretched-link"></a>
+                </div>
+                <div class="dish">
+                        <div class="dish-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <img src="images/smoothie-frutas-vermelhas.jpg" alt="Smoothie de Frutas Vermelhas">
+                        <h3 class="dish-title">Smoothie de Frutas Vermelhas</h3>
+                        <span class="dish-description">Refrescante e energético, feito com mix de frutas vermelhas, iogurte e mel.</span>
+                        <div class="dish-rate">
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <span>(500+)</span>
+                        </div>
+                        <a href="detalhes.html?id=10" class="stretched-link"></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>O ÉFOOD é um site de receitas práticas e deliciosas, com opções para todos os gostos e níveis de cozinha. Desde pratos rápidos até sobremesas incríveis, oferece passo a passo fácil, dicas e fotos apetitosas. Ideal para quem ama cozinhar e explorar novos sabores. </p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li>Email: info@example.com</li>
+                    <li>Phone: (55) 5555-55555</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">Facebook</a>
+                    <a href="#" class="social-link">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./../public/assets/Scripts/main.js"></script>
+    </body>
+</html>
